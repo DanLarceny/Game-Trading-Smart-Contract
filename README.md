@@ -4,7 +4,7 @@ The contract acts as a decentralised market place for players to list their item
 It allows players to list their items for sale, set prices, and facilitate secure transactions with other players.
 
 # Deployment
-1. Copy and paste the trade.sol file into Remix IDE.
+1. Copy and paste trade.sol file into Remix interface.
 2. Compile trade.sol
 3. Deploy
 
