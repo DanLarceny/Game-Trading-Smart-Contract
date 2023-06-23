@@ -29,7 +29,7 @@ contract GameTradeSystem {
 
     function listForSale(uint _itemId, uint _price) public {
         require(items[_itemId].id != 0, "Invalid item");
-        require(items[_itemId].owner == msg.sender, "You are not the owner of the item");
+        require(items[_itemId].owner == msg.sender, "You don't own this item");
         require(!items[_itemId].listed, "Item is already listed");
 
         items[_itemId].listed = true;
@@ -40,7 +40,7 @@ contract GameTradeSystem {
 
     function unlistForSale(uint _itemId) public {
         require(items[_itemId].id != 0, "Invalid item");
-        require(items[_itemId].owner == msg.sender, "You are not the owner of the item");
+        require(items[_itemId].owner == msg.sender, "You don't own this item");
         require(items[_itemId].listed, "Item is not listed");
 
         items[_itemId].listed = false;
